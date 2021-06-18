@@ -16,7 +16,7 @@ Router.map(function () {
       this.route("issues");
     });
   });
-  this.route("not-found", {  path: "*path"  });
+  this.route("not-found", { path: "*path" });
 });
 
 export default Router;
