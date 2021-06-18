@@ -1,0 +1,9 @@
+# MODULES
+node_modules
+bower_modules
+
+# ARTIFACTS
+build
+coverage
+dist
+tmp
