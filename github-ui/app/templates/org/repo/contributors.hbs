@@ -1,9 +1,9 @@
 <h4>Contributors</h4>
 
 <ul>
-  <li>Contributor A</li>
-  <li>Contributor B</li>
-  <li>Contributor C</li>
+  {{#each model as |contributor|}}
+  <li>{{contributor.displayName}}</li>
+  {{/each}}
 </ul>
 
 {{outlet}}

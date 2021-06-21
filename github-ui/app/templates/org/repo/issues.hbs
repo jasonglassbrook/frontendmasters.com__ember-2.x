@@ -1,9 +1,9 @@
 <h4>Issues</h4>
 
 <ul>
-  <li>Issue A</li>
-  <li>Issue B</li>
-  <li>Issue C</li>
+  {{#each model as |issue|}}
+  <li>{{issue.displayName}}</li>
+  {{/each}}
 </ul>
 
 {{outlet}}
