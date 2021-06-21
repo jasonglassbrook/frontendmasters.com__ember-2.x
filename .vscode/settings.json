@@ -1,0 +1,27 @@
+{
+  "[css]": {
+    "editor.formatOnSave": false
+  },
+  "[html]": {
+    "editor.formatOnSave": false
+  },
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[json]": {
+    "editor.formatOnSave": false
+  },
+  "[sass]": {
+    "editor.formatOnSave": false
+  },
+  "[scss]": {
+    "editor.formatOnSave": false
+  },
+  "[typescript]": {
+    "editor.formatOnSave": false
+  },
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": false,
+  "editor.formatOnSaveMode": "modifications",
+  "editor.formatOnType": false
+}
