@@ -6,11 +6,11 @@ const Router = EmberRouter.extend({
   rootURL: config.rootURL,
 });
 
-Router.map(function () {
+Router.map(function() {
   this.route("orgs");
-  this.route("org", { path: "org/:org" }, function () {
+  this.route("org", { path: "org/:org" }, function() {
     this.route("repos");
-    this.route("repo", { path: "repo/:repo" }, function () {
+    this.route("repo", { path: "repo/:repo" }, function() {
       this.route("contributors");
       this.route("issues");
     });
