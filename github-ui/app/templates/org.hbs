@@ -1,5 +1,20 @@
 {{link-to "Back to list of orgs" "orgs"}}
 
-<h2>ORG</h2>
+<h2>
+  {{model.name}}
+  [
+  <a target="_blank" href={{model.html_url}}>🐙</a>
+  {{#if model.twitter_username}}
+  <a target="_blank" href="https://www.twitter.com/{{model.twitter_username}}">🐦</a>
+  {{/if}}
+  {{#if model.email}}
+  <a target="_blank" href="mailto:{{model.email}}">✉️</a>
+  {{/if}}
+  ]
+</h2>
+
+<div>
+  <img src={{model.avatar_url}} alt="Avatar of {{model.name}}" height="128px">
+</div>
 
 {{outlet}}
