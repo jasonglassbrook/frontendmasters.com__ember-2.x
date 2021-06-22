@@ -12,12 +12,12 @@ export default Route.extend({
 
   model() {
     return [
-      { id: "emberjs", displayName: "EmberJS" },
-      { id: "facebook", displayName: "Facebook" },
-      { id: "google", displayName: "Google" },
-      { id: "jquery", displayName: "JQuery" },
-      { id: "microsoft", displayName: "Microsoft" },
-      { id: "netflix", displayName: "Netflix" },
+      { id: "emberjs", name: "EmberJS" },
+      { id: "facebook", name: "Facebook" },
+      { id: "google", name: "Google" },
+      { id: "jquery", name: "JQuery" },
+      { id: "microsoft", name: "Microsoft" },
+      { id: "netflix", name: "Netflix" },
     ];
   },
 });
