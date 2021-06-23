@@ -1,6 +1,16 @@
 {{link-to "Back to list of repos" "org.repos"}}
 
-<h3>REPO</h3>
+<h3>
+  {{model.name}}
+  [
+  <a target="_blank" href={{model.html_url}}>🐙</a>
+  {{#if model.homepage}}
+  <a target="_blank" href={{model.homepage}}>🏠</a>
+  {{/if}}
+  ]
+</h3>
+
+<p>{{model.description}}</p>
 
 <ul class="repo-nav">
   <li>{{link-to "ISSUES" "org.repo.issues"}}</li>
