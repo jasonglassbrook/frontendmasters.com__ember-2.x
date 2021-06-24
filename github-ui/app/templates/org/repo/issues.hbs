@@ -2,7 +2,20 @@
 
 <ul>
   {{#each model as |issue|}}
-  <li>{{issue.name}}</li>
+  <li>
+    <div>
+      <a target="_blank" href={{issue.html_url}}>
+        {{issue.title}}
+      </a>
+    </div>
+    <div>
+      #{{issue.number}}
+      opened on
+      {{issue.created_at__date}}
+      by
+      <a target="_blank" href={{issue.user.html_url}}>{{issue.user.login}}</a>
+    </div>
+  </li>
   {{/each}}
 </ul>
 
