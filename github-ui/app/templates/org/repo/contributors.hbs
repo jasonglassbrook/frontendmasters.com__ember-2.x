@@ -2,7 +2,19 @@
 
 <ul>
   {{#each model as |contributor|}}
-  <li>{{contributor.name}}</li>
+  <li>
+    <div>
+      <img src={{contributor.avatar_url}} alt="Avatar of {{contributor.login}}" height="64px">
+    </div>
+    <div>
+      <a target="_blank" href={{contributor.html_url}}>
+        {{contributor.login}}
+      </a>
+      has contributed
+      {{contributor.contributions}}
+      times
+    </div>
+  </li>
   {{/each}}
 </ul>
 
